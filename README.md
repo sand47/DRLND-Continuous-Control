@@ -2,9 +2,11 @@
 
 ---
 This is the second project in the Udacity Deep Reinforcement Learning Nanodegree. 
-
-This project works with the [Reacher](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#reacher) environment.
+<br>
 ![Trained Agent](https://github.com/sand47/DRLND-Continuous-Control/blob/master/images/reacher.gif)
+<br>
+This project works with the [Reacher](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#reacher) environment.
+
 
 
 ## Project Details
