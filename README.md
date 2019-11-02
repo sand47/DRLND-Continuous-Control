@@ -4,8 +4,8 @@
 This is the second project in the Udacity Deep Reinforcement Learning Nanodegree. 
 
 This project works with the [Reacher](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#reacher) environment.
+![Trained Agent](https://github.com/sand47/DRLND-Continuous-Control/blob/master/images/reacher.gif)
 
-[![Trained Agent](https://github.com/sand47/DRLND-Continuous-Control/reacherp_ddpg_agent_small.gif?raw=true)](https://www.youtube.com/watch?v=N1vWkCfbEGQ)
 
 ## Project Details
 In this environment, a double-jointed arm can move to target locations. A reward of +0.1 is provided for each step that the agent's hand is in the goal location. Thus, the goal of your agent is to maintain its position at the target location for as many time steps as possible.
