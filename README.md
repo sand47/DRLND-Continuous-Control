@@ -10,7 +10,7 @@ Moving double-jointed arm to target locations using DDGP
 
 <br>
 
-This project works with the [Reacher] (https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#reacher) environment.
+This project works with the [Reacher](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#reacher) environment.
 
 
 
