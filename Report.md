@@ -1,7 +1,7 @@
 ## DRL - DDPG Algorithm - Reacher Continuous Control
 
 ### Model Architecture
-This project utilised the DDPG (Deep Deterministic Policy Gradient) architecture outlined in the udacity [Udacity](https://github.com/udacity/deep-reinforcement-learning/tree/master/ddpg-bipedal)
+This project utilised the DDPG (Deep Deterministic Policy Gradient) architecture outlined in the [Udacity](https://github.com/udacity/deep-reinforcement-learning/tree/master/ddpg-bipedal)
 
 ## State and Action Spaces
 In this environment, when a double-jointed arm can move to target locations a reward of +0.1 is provided for each step that the agent's hand is in the goal location. Thus, the goal of your agent is to maintain its position at the target location for as many time steps as possible.
@@ -20,8 +20,6 @@ As above, a reward of +0.1 is provided for each step that the agent's hand is in
 
 The DDPG agent is contained in [`ddpg_agent.py`](https://github.com/sand47/DRLND-Continuous-Control/blob/master/ddpg_agent.py)
 
-For each time step and agent the Agent acts upon the state utilising a shared (at class level) `replay_buffer`, `actor_local`, `actor_target`, `actor_optimizer`, `critic_local`, `criticl_target` and `critic_optimizer` networks.
-
 ### DDPG Hyper Parameters
 - n_episodes (int): maximum number of training episodes
 - max_t (int): maximum number of timesteps per episode
@@ -30,29 +28,21 @@ For each time step and agent the Agent acts upon the state utilising a shared (a
 Where
 `n_episodes=300`, `max_t=1000`
 
-Upon running this numerous times it became apparent that the environment would return done at 1000 timesteps. Higher values were irrelevant.
-
 ### DDPG Agent Hyper Parameters
 
-BUFFER_SIZE = int(1e6)  # replay buffer size
-BATCH_SIZE = 128        # minibatch size
-GAMMA = 0.99            # discount factor
-TAU = 1e-3              # for soft update of target parameters
-LR_ACTOR = 1e-4        # learning rate of the actor
-LR_CRITIC = 1e-3        # learning rate of the critic
-WEIGHT_DECAY = 0        # L2 weight decay
-LEARN_EVERY = 20        # learning timestep interval
-LEARN_NUM = 10          # number of learning passes
-OU_SIGMA = 0.2          # Ornstein-Uhlenbeck noise parameter
-OU_THETA = 0.15         # Ornstein-Uhlenbeck noise parameter
-EPSILON = 1.0           # explore->exploit noise process added to act step
-EPSILON_DECAY = 1e-6    # decay rate for noise process
-
-
-Where 
-`BUFFER_SIZE = int(1e6)`, `BATCH_SIZE = 128`, `GAMMA = 0.99`, `TAU = 1e-3`, `LR_ACTOR = 1e-4`, `LR_CRITIC = 1e-4`, `WEIGHT_DECAY = 0.0`, `N_LEARN_UPDATES = 10` and `N_TIME_STEPS = 20`
-
-Succesful training was also achieved with `N_LEARN_UPDATES = 8` in a shorter number of episodes but longer running due to no CUDA enabled GPUs on it. 
+- BUFFER_SIZE = int(1e6)  # replay buffer size
+- BATCH_SIZE = 128        # minibatch size
+-GAMMA = 0.99            # discount factor
+-TAU = 1e-3              # for soft update of target parameters
+-LR_ACTOR = 1e-4        # learning rate of the actor
+-LR_CRITIC = 1e-3        # learning rate of the critic
+-WEIGHT_DECAY = 0        # L2 weight decay
+- LEARN_EVERY = 20        # learning timestep interval
+- LEARN_NUM = 10          # number of learning passes
+- OU_SIGMA = 0.2          # Ornstein-Uhlenbeck noise parameter
+- OU_THETA = 0.15         # Ornstein-Uhlenbeck noise parameter
+- EPSILON = 1.0           # explore->exploit noise process added to act step
+- EPSILON_DECAY = 1e-6    # decay rate for noise process
 
 ### Neural Networks
 
