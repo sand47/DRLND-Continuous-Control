@@ -1,7 +1,7 @@
 # DRLND-Continuous-Control
 
 ---
-This is the second project in the Udacity Deep Reinforcement Learning Nanodegree. 
+
 <br>
 <br>
 ![Trained Agent](https://github.com/sand47/DRLND-Continuous-Control/blob/master/images/reacher.gif)
@@ -42,3 +42,4 @@ Then run the [`DDPG_Continuous_Control.ipynb`](https://github.com/sand47/DRLND-C
 
 Once trained the model weights will be saved in the same directory in the files `checkpoint_actor.pth` and `checkpint_critic.pth`.
 
+Read the report file for more details about the description of the implementation and a plot of rewards per episode.
