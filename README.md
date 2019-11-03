@@ -4,7 +4,7 @@
 Moving double-jointed arm to target locations using DDGP
 
 <br>
-<br>
+
 
 ![Trained Agent](https://github.com/sand47/DRLND-Continuous-Control/blob/master/images/reacher.gif)
 
