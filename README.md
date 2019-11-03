@@ -1,6 +1,7 @@
 # DRLND-Continuous-Control
 
 ---
+Moving double-jointed arm to target locations using DDGP
 
 <br>
 <br>
@@ -40,7 +41,7 @@ The file needs to placed in the root directory of the repository and unzipped.
 Next, before starting the environment utilising the corresponding prebuilt app from Udacity  **Before running the code cell in the notebook**, change the `file_name` parameter to match the location of the Unity environment that you downloaded.
 
 ## Instructions
-Then run the [`DDPG_Continuous_Control.ipynb`](https://github.com/sand47/DRLND-Continuous-Control/blob/master/DDPG_Continuous_Control.ipynb) notebook using the drlnd kernel to train the DDPG agent.
+Then run the [`Continuous_Control.ipynb`](https://github.com/sand47/DRLND-Continuous-Control/blob/master/DDPG_Continuous_Control.ipynb) notebook using the drlnd kernel to train the DDPG agent.
 
 Once trained the model weights will be saved in the same directory in the files `checkpoint_actor.pth` and `checkpint_critic.pth`.
 
